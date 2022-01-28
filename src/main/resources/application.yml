@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123
+    username: root
+    url: jdbc:mysql://localhost:3306/scott_test
+
+#初始化数据库
+  sql:
+    init:
+      mode: always #替换原有的datasource.initialization-mode
+      data-locations: #替换原有的datasource.schema
+        - classpath:data/data.sql
+      schema-locations: #替换原有的datasource.daga
+        - classpath:data/schema.sql
+
+

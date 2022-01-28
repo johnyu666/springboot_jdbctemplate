@@ -1,0 +1,19 @@
+
+### 添加一条
+POST http://localhost:8080/emps
+Content-Type: application/json
+
+{"ename": "johnyu","job": "codder"}
+
+### 查询所有
+
+GET http://localhost:8080/emps
+Accept: application/json
+
+### 查询一条
+GET http://localhost:8080/emps/7369
+Accept: application/json
+
+### 删除一条
+DELETE http://localhost:8080/emps/7369
+Accept: application/json
